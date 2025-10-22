@@ -1,0 +1,25 @@
+*{
+    margin:0;
+}
+.container {
+    height:100vh;
+  display: grid;
+  grid-template-columns: 150px 1fr 150px;
+  grid-template-rows: 70px auto 70px;
+  grid-template-areas:
+    "header header header"
+    "sidebar content ads"
+    "footer footer footer";
+    color:azure;
+    font-size:20px;
+    text-align: center;
+    gap:10px;
+}
+
+
+/* अब प्रत्येक भागलाई नामसँग match गरिन्छ */
+.header  { grid-area: header; background: lightblue; }
+.sidebar1 { grid-area: sidebar; background: lightgreen; }
+.sidebar2{grid-area:ads; background-color: rgb(80, 3, 3);}
+.content { grid-area: content; background: rgb(196, 196, 28); }
+.footer  { grid-area: footer; background: lightcoral; }
