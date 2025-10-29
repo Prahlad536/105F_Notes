@@ -69,6 +69,7 @@ nav h1 span{
 }
 .left h1{
     font-size: 3rem;
+    color:white;
 }
 .socialMedia{
     width:12rem;
@@ -126,6 +127,7 @@ nav h1 span{
 .services div p{
     font-size: 0.7rem;
     padding:2rem;
+    color:white;
 }
 .outsideofservices{
     text-align: center;
@@ -139,3 +141,4 @@ nav h1 span{
     cursor:pointer;
     background-color: #975bcf;
 }
+

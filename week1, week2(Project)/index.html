@@ -19,7 +19,7 @@
     <section class="hero">
         <div class="left">
             <p>My name is Prahlad Kumar Majhi</p>
-            <h1>I'm a Web Developer</h1>
+            <h1 id="typeWriter"></h1>
             <p>I have Experiences in javascript</p>
             <div class="socialMedia">
                 <img src="./image/github logo.png" alt="github" srcset="">
@@ -75,5 +75,24 @@
           </p>
         </div>
     </section>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script>
+        var app = document.getElementById('typeWriter');
+
+var typewriter = new Typewriter(app, {
+  loop: true,
+  delay: 75,
+});
+
+typewriter
+  .pauseFor(2500)
+  .typeString('<h1> I am a Web | App </h1>')
+  .pauseFor(300)
+  .deleteChars(10)
+  .typeString('<h1 style="color: gold">Developer</h1>  ')
+  .pauseFor(1000)
+  .start();
+    </script>
+
 </body>
 </html>
